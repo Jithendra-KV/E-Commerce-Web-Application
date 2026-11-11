@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop considered everyday pieces for your wardrobe and home at Sunday Supply."
+    />
+    <meta name="theme-color" content="#f8f5ef" />
+    <title>Sunday Supply — Good things, thoughtfully found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span>Thoughtful finds. A little joy in every delivery.</span>
+      <span class="announcement-side">Complimentary shipping on orders $75+</span>
+    </div>
+
+    <header class="site-header">
+      <button class="icon-button mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+      <a class="wordmark" href="#" aria-label="Sunday Supply home">sunday<span> supply</span><i>.</i></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop">Shop all</a>
+        <a href="#shop" data-nav-category="wear">Wear</a>
+        <a href="#shop" data-nav-category="home">Home</a>
+        <a href="#story">Our little story</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" type="button" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4.5 4.5" /></svg>
+        </button>
+        <button class="icon-button bag-button" type="button" aria-label="Open shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg>
+          <span class="bag-count" aria-live="polite">0</span>
+        </button>
+      </div>
+      <form class="search-bar" role="search">
+        <label class="sr-only" for="site-search">Search products</label>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4.5 4.5" /></svg>
+        <input id="site-search" type="search" placeholder="What are you looking for?" autocomplete="off" />
+        <button type="button" class="search-close" aria-label="Close search">✕</button>
+      </form>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="sparkle">✳</span> A softer kind of shopping</p>
+          <h1 id="hero-title">Good things,<br /><em>thoughtfully</em> found.</h1>
+          <p class="hero-description">
+            Small joys for your everyday. Discover feel-good pieces made to be lived in, loved, and kept.
+          </p>
+          <a class="button button-dark" href="#shop">Find your something <span aria-hidden="true">→</span></a>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+            </div>
+            <span><strong>4.9/5</strong> from 2,000+ happy homes</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=88"
+            alt="A thoughtfully styled wardrobe of everyday clothing"
+          />
+          <div class="hero-sticker" aria-label="Made for everyday">
+            <span>made for</span><strong>every<br />day</strong><i>♡</i>
+          </div>
+          <div class="image-caption">
+            <span>THE EVERYDAY EDIT</span>
+            <span>01 — 06</span>
+          </div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">S</div>
+      </section>
+
+      <section class="benefits" aria-label="Shopping benefits">
+        <div class="benefit-item"><span class="benefit-icon">✳</span><span><strong>Little-batch finds</strong><small>Chosen with care, never in a rush</small></span></div>
+        <div class="benefit-item"><span class="benefit-icon">♡</span><span><strong>Made to be kept</strong><small>Quality you'll come back to</small></span></div>
+        <div class="benefit-item"><span class="benefit-icon">↗</span><span><strong>Kind to the planet</strong><small>Thoughtful choices, always</small></span></div>
+        <div class="benefit-item"><span class="benefit-icon">☻</span><span><strong>Here for you</strong><small>Real people, ready to help</small></span></div>
+      </section>
+
+      <section class="shop-section" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A few of our current favorites</p>
+            <h2 id="shop-title">The good stuff</h2>
+          </div>
+          <a class="text-link" href="#shop" id="view-all">View all <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="shop-toolbar">
+          <div class="category-tabs" role="group" aria-label="Filter products by category">
+            <button type="button" class="category-tab active" data-category="all">Everything <span>08</span></button>
+            <button type="button" class="category-tab" data-category="wear">Wear <span>04</span></button>
+            <button type="button" class="category-tab" data-category="home">Home <span>04</span></button>
+          </div>
+          <label class="sort-control">
+            <span>Sort by</span>
+            <select id="sort-products" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </label>
+        </div>
+        <p class="result-count" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>No little joys found</h3>
+          <p>Try another search or explore everything we have.</p>
+          <button type="button" class="button button-dark reset-search">Show me everything</button>
+        </div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1100&q=85"
+            alt="Warm, sunlit home with carefully chosen everyday objects"
+            loading="lazy"
+          />
+          <span class="story-stamp">GOOD THINGS<br />TAKE TIME</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">A note from us</p>
+          <h2>A little less,<br /><em>a little better.</em></h2>
+          <p>
+            We started Sunday Supply with a simple thought: the things we bring into our lives should make them feel a little more like ours. So we look for useful, lovely things made with care — and leave the rest.
+          </p>
+          <a class="text-link" href="#newsletter">Get to know us <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div>
+          <p class="eyebrow">A good thing in your inbox</p>
+          <h2>Notes from Sunday.</h2>
+          <p>New finds, little rituals, and 10% off your first order.</p>
+        </div>
+        <form class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Your email address</label>
+          <input id="newsletter-email" type="email" placeholder="Your email address" required />
+          <button class="button button-dark" type="submit">Count me in <span aria-hidden="true">→</span></button>
+          <span class="newsletter-message" aria-live="polite"></span>
+        </form>
+        <span class="newsletter-flower" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="wordmark" href="#">sunday<span> supply</span><i>.</i></a>
+          <p>Good things for the everyday.<br />Found with you in mind.</p>
+        </div>
+        <div class="footer-column"><strong>Come on in</strong><a href="#shop">Shop all</a><a href="#shop" data-footer-category="wear">Wear</a><a href="#shop" data-footer-category="home">Home</a></div>
+        <div class="footer-column"><strong>Need a hand?</strong><a href="#newsletter">FAQs</a><a href="#newsletter">Shipping & returns</a><a href="#newsletter">Get in touch</a></div>
+        <div class="footer-social"><strong>Find us elsewhere</strong><a href="#story" aria-label="Instagram">Instagram ↗</a><a href="#story" aria-label="Pinterest">Pinterest ↗</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2025 Sunday Supply Co.</span><span>Made for the little things.</span><div><a href="#story">Privacy</a><a href="#story">Terms</a></div></div>
+    </footer>
+
+    <div class="overlay" hidden></div>
+    <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="drawer-header">
+        <div><p class="eyebrow">Your good things</p><h2>Your bag <span class="drawer-count">(0)</span></h2></div>
+        <button class="icon-button close-cart" type="button" aria-label="Close shopping bag">✕</button>
+      </div>
+      <div class="cart-content"></div>
+      <div class="cart-footer" hidden>
+        <div class="shipping-progress"><span class="shipping-copy"></span><div class="progress-track"><span></span></div></div>
+        <div class="subtotal-row"><span>Subtotal</span><strong class="cart-subtotal">$0.00</strong></div>
+        <p class="tax-note">Taxes and shipping calculated at checkout.</p>
+        <button class="button button-dark checkout-button" type="button">Continue to checkout <span aria-hidden="true">→</span></button>
+        <button class="continue-shopping" type="button">Keep looking around</button>
+      </div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
